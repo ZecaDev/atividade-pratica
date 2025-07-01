@@ -48,8 +48,8 @@
     }
 
     #contatos {
-        position: initial;
-        display: block;
+        position: sticky;
         margin: auto;
+        margin-top: 10px;
     }
 }

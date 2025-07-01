@@ -267,18 +267,32 @@ section > form > div.campo {
 
 #contatos {
     position: absolute;
-    right: 12%;
-    top: 35%;
-    width: 270px;
+    right: 8%;
+    top: 30%;
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+
 }
 
 #contatos p {
-    font-size: 14px;
-    text-align: center;
+    font-size: 14px; 
+    text-align: start;
+    line-height: 0px;
+    text-indent: 0px;
+    padding: 5px;
 }
 
+#contatos > #nome {
+    padding-top: 10px;
+    
+    
+}
 
-
+#contatos > #likedin {
+    padding-left: 8px;
+}
 
 
 
