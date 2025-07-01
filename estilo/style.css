@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 120px; 
+}
+
+p {
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.582), white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: orange url(../imagens/meu-fundo.png) top right/cover no-repeat;
+    padding: 15px 0px;
+    height: 360px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
+}
+
+div#logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
+}
+
+span#burguer {
+    display: none;
+    user-select: none;
+    position: absolute;
+    top: 17px;
+    right: 37px;
+    font-size: 2em;
+    border-radius: 5px;
+    padding: 3px;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-image: linear-gradient(to bottom, gray, white);
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    background-image: linear-gradient(to bottom, gray, white);
+    width: 100%;
+    padding-bottom: 20px;
+    top: 0%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
+}
+
+menu ul {
+    width: 500px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+menu > ul > li {
+    display: inline-block;
+    margin: 0px 15px;
+    padding: 5px;
+}
+
+menu a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+menu a:hover{
+    color: #FF6D00;
+}
+
+
+/* serve para criar uma linha animada em baixo do link */
+menu a::after{ 
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 2px; 
+    bottom: -4px; 
+    left: 0;
+    background-color: #FF6D00;
+    transition: width 0.5s ease;
+}
+menu a:hover::after{
+    width: 100%;
+    color: #FF6D00;
+}
+
+div#imagem {
+    position: relative;
+    
+}
+
+div#imagem > img {
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    top: 240px;
+    left: 40px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
+}
+
+div#redes-sociais {
+    position: absolute;
+    right: 1%;
+    top: 300px;
+    
+}
+
+div#redes-sociais img{
+    width: 35px;
+    border-radius: 30px;
+}
+
+div#redes-sociais img:hover{
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+    transform: translate(-3px, -3px);
+    transition: transform 0.3s;
+}
+
+div#redes-sociais > a{
+    padding: 5px;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+section{
+    background-color: lightyellow;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
+}
+
+
+section#sobremim h1 {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+}
+
+
+section#sobremim h2 {
+    color: lightcoral;
+    font-size: 1em;
+    padding: 10px 0px 10px 0px;
+}
+
+
+
+
+
+section#experiencias {
+    position: relative;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+section#experiencias > div{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    border: 1px solid #FF6D00;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(255, 109, 0, 0.2);
+    padding: 20px;
+    margin: 40px 10px 0px 0px;
+    background-color: white;
+    
+}
+
+section#experiencias > div:hover{
+    transform: translate(0px, -5px);
+    transition: transform 0.4s;
+    box-shadow: 4px 4px 10px rgba(255, 109, 0, 0.2);
+}
+
+
+section#experiencias h1 {
+    position: absolute;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+    z-index: 10;
+    padding: 2px;
+}
+
+section#experiencias h2 {
+    color:#E65100;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+}
+
+section#experiencias h3 {
+    color: #5C5C5C;
+    font-size: 0.5em;
+    padding-bottom: 10px;
+    
+}
+
+section#experiencias p {
+    font-size: 0.4em;
+    line-height: 10px;
+    text-indent: 0px;
+}
+
+section#experiencias img {
+    display: block;
+    width: 90px;
+    margin: 10px auto;
+}
+
+section#experiencias > div#ex3 img {
+    display: block;
+    width: 60px;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+section#contato {
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}
+
+section#contato > form input, form textarea{
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+section > form > div.campo {
+    padding: 8px 0px;
+}
+
+
+
+#contatos {
+    position: absolute;
+    right: 12%;
+    top: 35%;
+    width: 270px;
+}
+
+#contatos p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+
+footer p {    
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+}
+
+
+

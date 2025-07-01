@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio pessoal</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols" />
+    <link rel="stylesheet" href="estilo/mediaquery.css">
+    
+</head>
+<body onresize="mudou()">
+    <header>
+        <nav>
+            <span id="burguer" class="material-symbols" onclick="clickMenu()">menu</span>
+            <div id="logo">
+                <p>DevGabriel</p>
+            </div>
+            <menu id="menu">
+                <ul>
+                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#contato" rel="">Contato</a></li>
+                </ul>
+            </menu>
+        </nav>
+        <div id="imagem">
+            <img src="imagens/teste2.png" alt="minha foto">
+        </div>
+        <div id="redes-sociais">
+            <a href="#" target="_blank"><img src="imagens/logo-instagram.jpg" alt="logo-instagram"></a>
+            <a href="#" target="_blank"><img src="imagens/logo-github.jpg" alt="logo-github"></a>
+            <a href="#" target="_blank"><img src="imagens/logo-likedin.png" alt="logo-likedin"></a>
+        </div>
+    </header>
+    <main>
+        <section id="sobremim">
+            <h1>Olá, me chamo Gabriel</h1>
+            <h2>Estudante de Análise e Desenvolvimento de Sistemas.</h2>
+            <p>Tenho 18 anos, estou estudando Análise e Desenvolvimento de Sistemas pela UNINTER, e ta sendo uma experiência incrível. Sempre fui apaixonado por computadores, e quando eu achei uma maneira de trabalhar com isso, eu me encantei pela TI. Atualmente estou a 5 meses e meio estudando focadamente para poder ser um Desenvolvedor Full Stack em Java.</p>
+        </section>
+        <section id="experiencias">
+            <h1>Experiências</h1>
+            <div id="ex1">
+                <h2>Assistente administrativo</h2>
+                <h3>Cetec Serviços de Segurança e Vigilância - Aprendiz</h3>
+                <p>ago de 2022 - out de 2023 · 1 ano 3 meses </p>
+                <img src="imagens/cetec.png" alt="cetec-logo">
+            </div>
+            <div id="ex2">
+                <h2>Aprendizagem em serviços administrativos</h2>
+                <h3>Senac RJ</h3>
+                <p>ago de 2022 - out de 2023 · 1 ano 3 meses </p>
+                <img src="imagens/640px-Senac_logo.svg.png" alt="">
+            </div>
+            <div id="ex3">
+                <h2>Tecnólogo, Análise e Desenvolvimento de Sistemas</h2>
+                <h3>UNINTER Centro Universitário Internacional</h3>
+                <p>fev de 2025 - jul de 2027</p>
+                <img src="imagens/uninter.jpg" alt="">
+            </div>
+            <div id="ex4">
+                <h2>Ensino Médio</h2>
+                <h3>Escola Estadual Gilson Amado</h3>
+                <p>jan de 2022 - dez de 2024</p>
+                <img src="imagens/bandeira-rj.webp" alt="">
+            </div>
+        </section>
+        <section id="portifolio">
+            <h1>Portifólio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo adipisci quaerat voluptas inventore reiciendis necessitatibus consectetur a earum nihil itaque, expedita obcaecati minus pariatur odio suscipit incidunt ea praesentium?
+            Et quo impedit illo. Aspernatur dolores quos dolore vero nesciunt totam, architecto perferendis commodi libero nostrum hic excepturi officia corrupti laudantium vitae recusandae dicta voluptatum! Harum debitis at nemo vero.
+            Rem accusamus incidunt deleniti nulla expedita! Aliquid fuga alias ipsum quia repellendus beatae aliquam amet soluta dolores quos. Exercitationem deleniti quas voluptates optio iste pariatur beatae reprehenderit possimus est ea!
+            Cupiditate modi perferendis illo explicabo possimus tempore voluptate aperiam accusantium iusto, dolorum ipsum quasi quia consectetur et fugiat? Dolor consequatur cupiditate quia dolorum? Nam, at consequatur magni distinctio sunt debitis.
+            Autem laboriosam sequi itaque accusantium ipsum. Labore, et optio fuga id modi soluta porro dolorem enim distinctio quas totam ea numquam ipsam nobis! Quam fugit dolore unde soluta molestias expedita.</p>
+        </section>
+        <section id="contato">
+            <h1>Fale comigo.</h1>
+            <form action="https://formsubmit.co/gabrielsantos4934@gmail.com" method="post" enctype="text/plain">        
+                
+                <div class="campo">
+                    <label for="nome">Nome: </label> <br>
+                    <input type="text" name="nome" id="nome" required maxlength="50" size="50">
+                </div>
+
+                
+                <div class="campo">
+                    <label for="email">E-mail: </label> <br>
+                    <input type="email" name="email" id="email" required
+                    maxlength="50" size="50">
+                </div>
+
+                <br>
+                <label for="texto">Mensagem: </label><br>
+                <textarea name="texto" id="texto" placeholder="Digite sua Mensagem aqui..." cols="48" rows="20"></textarea>
+            
+                <br>
+                <input type="submit" value="Enviar Mensagem" >
+    
+            </form>
+
+
+
+            <div id="contatos">
+                <p>Nome: Gabriel dos Santos Figueiredo</p>
+                <p>E-mail: gs51727181@gmail.com</p>
+                <p>Likedin: <a href="https://www.linkedin.com/in/gabriel-dos-santos-15b7bb234/?trk=opento_sprofile_topcard" target="_blank">Gabriel Dos Santos</a></p>
+                <p>Tel: (21) 97720-3860</p>
+            </div>
+    
+    
+        </section>
+    </main>
+
+
+
+
+
+    <footer>
+
+        <p>&copy 2025 Gabriel dos Santos.Todos os direitos reservados.</p>
+
+    </footer>
+    
+
+
+
+
+
+
+    <script>
+        window.onload = function() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block' 
+            } else {
+                menu.style.display = 'none' 
+            }
+        }
+
+        function mudou() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        } 
+    </script>
+</body>
+</html>

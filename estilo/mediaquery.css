@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 768px) {
+    nav > span#burguer {
+        display: block;
+        
+    }
+
+    nav {
+        height: 70px;    
+    }
+
+    menu > ul {
+        position: absolute;
+        background-color: rgba(211, 211, 211, 0.911);
+        border: 1px solid rgba(0, 0, 0, 0.26);
+        border-radius: 4px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+        padding: 0px;
+        width: 150px;
+        text-align: right;
+        right: 37px;
+        top: 55px;
+
+
+    }    
+
+    menu > ul > li {
+        border-top: 1px solid white;
+        border-radius: 4px;
+        width: 150px;
+        margin: 0px;
+        
+    }    
+
+    section#contato {
+        background-color: white;
+        overflow: hidden;
+    }
+
+    section#contato > form input, form textarea{
+        width: 99%;   
+    }
+
+    section > form > div.campo {
+       padding: 8px 0px;
+    }
+
+    #contatos {
+        position: initial;
+        display: block;
+        margin: auto;
+    }
+}
