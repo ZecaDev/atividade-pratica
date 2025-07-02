@@ -304,7 +304,8 @@ div.item > iframe {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px;
+    
+    padding: 0px;
     
 }
 
@@ -316,6 +317,7 @@ div.item > iframe {
     padding: 10px;
     border: 1px dashed black;
     border-radius: 10px;
+    
 }
 
 #backend > div > p {
