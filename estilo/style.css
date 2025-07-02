@@ -284,8 +284,7 @@ section > form > div.campo {
     padding: 5px;
 }
 
-#contatos > #nome {
-    padding-top: 10px;
+#contatos {
     
     
 }
@@ -294,6 +293,10 @@ section > form > div.campo {
     padding-left: 8px;
 }
 
+#contatos > #likedin a {
+    text-decoration: none;
+    color: rgb(25, 194, 236);
+}
 
 
 
