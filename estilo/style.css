@@ -303,8 +303,7 @@ div.item > iframe {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: center;
     padding: 0px;
     
 }
