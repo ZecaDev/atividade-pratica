@@ -1,16 +1,17 @@
 @charset "UTF-8";
 
-
+/* media query para celular */
 @media screen and (max-width: 768px) {
-    nav > span#burguer {
-        display: block;
-        
-    }
-
     nav {
         height: 70px;    
     }
+    
+    /* deixa o menu burguer visivel quando diminuir a tela */
+    nav > span#burguer {
+        display: block;     
+    }
 
+    /* configuração menu */
     menu > ul {
         position: absolute;
         background-color: rgba(211, 211, 211, 0.911);
@@ -22,8 +23,6 @@
         text-align: right;
         right: 37px;
         top: 55px;
-
-
     }    
 
     menu > ul > li {
@@ -31,14 +30,9 @@
         border-radius: 4px;
         width: 150px;
         margin: 0px;
-        
     }    
 
-    section#contato {
-        background-color: white;
-        overflow: hidden;
-    }
-
+    /* configuração dos contato */
     section#contato > form input, form textarea{
         width: 99%;   
     }

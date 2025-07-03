@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio pessoal</title>
+    <link rel="shortcut icon" href="imagens/favicon (1).ico" type="image/x-icon">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols" />
     <link rel="stylesheet" href="estilo/mediaquery.css">
@@ -88,7 +89,7 @@
                 <div class="item">
                     <h3>Projeto Android</h3>
                     <iframe src="https://zecadev.github.io/projeto-android/android/index.html" frameborder="0"></iframe>
-                    <p>Primeiro site criado com o Curso em Video, foi um desafio e tanto pos nao tinha muito costume de criar site.</p>
+                    <p>Primeiro site criado com o Curso em Video, foi um desafio e tanto pois nao tinha muito costume de criar site.</p>
                 </div>
             </div>
             <h2>Back-End</h2>
@@ -146,19 +147,18 @@
 
                 <p id="email"><img src="imagens/icons8-gmail-48.png" alt="icon-email">E-mail: gs51727181@gmail.com</p>
                 
-                <p id="likedin"><img src="imagens/linkedin.png" alt="icon-likedin"> Likedin: <a href="https://www.linkedin.com/in/gabriel-dos-santos-15b7bb234/?trk=opento_sprofile_topcard" target="_blank">Gabriel Dos Santos</a></p>
+                <p id="likedin"><img src="imagens/linkedin.png" alt="icon-likedin"> Linkedin: <a href="https://www.linkedin.com/in/gabriel-dos-santos-15b7bb234/?trk=opento_sprofile_topcard" target="_blank">Gabriel Dos Santos</a></p>
 
                 <p><span class="material-symbols">Call</span>Tel: (21) 97720-3860</p>
             </div> 
     
         </section>
     </main>
-
     <footer>
         <p>&copy 2025 Gabriel dos Santos.Todos os direitos reservados.</p>
     </footer>
-
     <script>
+        // fiz isso para o menu sumir quando diminuir a página
         window.onload = function() {
             if (window.innerWidth >= 768) {
                 menu.style.display = 'block' 
@@ -167,6 +167,7 @@
             }
         }
 
+        
         function mudou() {
             if (window.innerWidth >= 768) {
                 menu.style.display = 'block'
@@ -175,6 +176,7 @@
             }
         }
 
+        // quando o menu hamburguer for clicado ele ira aparecer, e se clicar novamente ele sumira
         function clickMenu() {
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'

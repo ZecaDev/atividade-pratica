@@ -2,14 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-
+/* configuraçoes gerais */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* faz com que a rolagem do scroll seja mais suave */
 }
 
+/* seleçao para o scroll de rolagem sozinha ir em cima do conteúdo */
 :target {
     scroll-margin-top: 120px; 
 }
@@ -25,25 +26,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* header */
 header {
+    height: 360px;
     background: orange url(../imagens/meu-fundo.png) top right/cover no-repeat;
     padding: 15px 0px;
-    height: 360px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
 }
 
 div#logo {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.3em;
     position: absolute;
     left: 20px;
     top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.438);
 }
 
+/* menu hamburguer para celular */
 span#burguer {
     display: none;
-    user-select: none;
     position: absolute;
     top: 17px;
     right: 37px;
@@ -59,8 +61,8 @@ span#burguer:hover {
 }
 
 nav {
-    position: fixed;
-    z-index: 1000;
+    position: fixed; /* deixei o menu fixado para quando descer a tela ele aparecer*/
+    z-index: 1000; /* para nada sobrebor */
     background-image: linear-gradient(to bottom, gray, white);
     width: 100%;
     padding-bottom: 20px;
@@ -103,14 +105,11 @@ menu a::after{
     background-color: #FF6D00;
     transition: width 0.5s ease;
 }
+
+/* efeito para a linha chegar ate o final */
 menu a:hover::after{
     width: 100%;
     color: #FF6D00;
-}
-
-div#imagem {
-    position: relative;
-    
 }
 
 div#imagem > img {
@@ -120,6 +119,18 @@ div#imagem > img {
     top: 240px;
     left: 40px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
+
+    animation: float 3s ease-in-out infinite; /* animação da imagem se mexendo*/
+}
+
+/* o tanto que a imagem vai ser mover */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
 }
 
 div#redes-sociais {
@@ -145,13 +156,13 @@ div#redes-sociais > a{
     padding: 5px;
 }
 
-
+/* principal */
 main {
     max-width: 1000px;
     margin: auto;
     margin-top: 150px;
 }
-
+/* section geral */
 section{
     background-color: #ff9b3d;
     margin: 50px 0px;
@@ -160,7 +171,7 @@ section{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
 }
 
-
+/* section sobremim */
 section#sobremim h1 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
 }
@@ -172,10 +183,7 @@ section#sobremim h2 {
     padding: 10px 0px 10px 0px;
 }
 
-
-
-
-
+/* section experiencias */
 section#experiencias {
     position: relative;
     min-height: 300px;
@@ -245,11 +253,7 @@ section#experiencias > div#ex3 img {
     margin: 10px auto;
 }
 
-
-
-
-
-
+/* section projetos */
 section#projetos {
     background-color: #ff9b3d;
     text-align: center;
@@ -273,8 +277,8 @@ section#projetos h2 {
 
 
 #htmlcss > div.item {
-    background-color: #FF6D00;
     width: 100%;
+    background-color: #FF6D00;
     padding: 10px;
     margin-bottom: 40px;
     
@@ -292,44 +296,31 @@ div.item p{
 
 
 div.item > iframe {
+    width: 100%;
+    height: 300px;
     border: 1px dashed black;
     border-radius: 10px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.479);
-    width: 100%;
-    height: 300px;
 }
 
+/* configurando os projetos backend */
 #backend {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     padding: 0px;
-    
 }
 
-
-#backend > div{
+#backend > div {
+    position: relative;
     width: 200px;
+    height: 230px;
     background-color: white;
     margin: 10px;
     padding: 10px;
     border: 1px dashed black;
     border-radius: 10px;
-    
-}
-
-#backend > div > p {
-    line-height: 30px;
-    text-indent: 0px;
-    text-align: start;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-#backend > div {
-    position: relative;
-    height: 230px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.342);
 }
 
@@ -358,10 +349,14 @@ div.item > iframe {
     width: 30px;
 }
 
+#backend > div > p {
+    line-height: 30px;
+    text-indent: 0px;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;  
+}
 
-
-
-
+/* section contato */
 section#contato {
     position: relative;
     background-color: white;
@@ -372,19 +367,13 @@ section#contato > form input, form textarea{
     border-radius: 3px;
     border: 1px solid black;
     padding: 5px;
-    
 }
 
 section > form > div.campo {
     padding: 8px 0px;
 }
 
-
-
-
-
-
-
+/* configurando os contatos */
 #contatos {
     position: absolute;
     right: 8%;
@@ -410,6 +399,7 @@ section > form > div.campo {
     padding-top: 5px ;
 }
 
+/* coloquei uns efeitos para qunado passar o mouse */
 #contatos p:hover{
     text-shadow: 1px 1px 1px #b13f0188;
     transform: translate(0px, -5px);
@@ -432,6 +422,7 @@ section > form > div.campo {
     color: black;
 }
 
+/* fiz um media para nao causar overflow quando diminuir a página */
 @media screen and (max-width: 820px) {
     #contatos {
     position: absolute;
@@ -441,12 +432,10 @@ section > form > div.campo {
     }
 }
 
-
-
+/* parte do footer */
 footer {
     background-color: rgba(0, 0, 0, 0.822);
 }
-
 
 footer p {    
     font-size: 10px;
