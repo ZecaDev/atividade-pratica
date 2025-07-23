@@ -187,7 +187,6 @@ section#sobremim h2 {
 section#experiencias {
     position: relative;
     min-height: 300px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -281,7 +280,6 @@ section#projetos h2 {
     background-color: #FF6D00;
     padding: 10px;
     margin-bottom: 40px;
-    
 }
 
 div.item h3{
